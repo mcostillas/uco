@@ -73,7 +73,7 @@ export default function EventsPage() {
     setSelectedImage(currentPhotos[newIndex]);
   };
 
-  const handleWheel = (e: React.WheelEvent, ref: React.RefObject<HTMLDivElement>) => {
+  const handleWheel = (e: React.WheelEvent, ref: React.RefObject<HTMLDivElement | null>) => {
     if (ref.current) {
       e.preventDefault();
       ref.current.scrollLeft += e.deltaY;
