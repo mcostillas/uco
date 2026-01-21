@@ -579,7 +579,7 @@ export default function PublicationSection() {
             {/* CTA Button */}
             <div className="pt-1 sm:pt-2">
               <Link
-                href="/publication"
+                href="/publication2"
                 className="group inline-flex items-center gap-1 sm:gap-1.5 px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3 bg-[#d82f50] text-white font-semibold text-xs sm:text-sm rounded-full hover:bg-[#b5263f] transition-all duration-300 shadow-lg shadow-[#d82f50]/25 hover:shadow-xl hover:shadow-[#d82f50]/30 hover:scale-105"
               >
                 View Our Work
