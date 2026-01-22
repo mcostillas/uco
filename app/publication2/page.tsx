@@ -132,6 +132,120 @@ export default function Publication2Page() {
             Documenting the vibrant life of UIC through compelling visuals and preserving memories that matter
           </p>
         </div>
+
+        {/* Wave Animation Overlay */}
+        <div className="wave-wrapper">
+          <svg className="waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shapeRendering="auto">
+            <defs>
+              <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g className="parallax">
+              <use xlinkHref="#gentle-wave" x="48" y="0" fill="rgba(216,47,80,0.7)" />
+              <use xlinkHref="#gentle-wave" x="48" y="3" fill="rgba(216,47,80,0.5)" />
+              <use xlinkHref="#gentle-wave" x="48" y="5" fill="rgba(216,47,80,0.3)" />
+              <use xlinkHref="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+          </svg>
+        </div>
+      </section>
+
+      {/* Category Cards Section */}
+      <section className="py-16 sm:py-20 md:py-24 bg-white">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
+              Explore Our <span className="font-[family-name:var(--font-gladiola)] text-[#d82f50]">Categories</span>
+            </h2>
+            <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4">
+              Browse through different aspects of campus life and activities
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
+            {/* Events Card */}
+            <Link 
+              href="/events"
+              className="group relative h-[300px] sm:h-[350px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-[1.02]"
+            >
+              <Image
+                src="/section_images/608819511_1282462377263720_7191083207580473107_n.jpg"
+                alt="Events"
+                fill
+                className="object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+              <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
+                <Calendar className="w-8 h-8 sm:w-10 sm:h-10 text-[#d82f50] mb-3 sm:mb-4" />
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-2 font-[family-name:var(--font-gladiola)]">
+                  Events
+                </h3>
+                <p className="text-sm sm:text-base text-gray-200">
+                  Discover campus happenings and celebrations
+                </p>
+              </div>
+            </Link>
+
+            {/* Organizations & Clubs Card */}
+            <div className="group relative h-[300px] sm:h-[350px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] cursor-pointer">
+              <Image
+                src="/section_images/611324135_1282462387263719_4357512669804949091_n.jpg"
+                alt="Organizations & Clubs"
+                fill
+                className="object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+              <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
+                <Heart className="w-8 h-8 sm:w-10 sm:h-10 text-[#d82f50] mb-3 sm:mb-4" />
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-2 font-[family-name:var(--font-gladiola)]">
+                  Organizations & Clubs
+                </h3>
+                <p className="text-sm sm:text-base text-gray-200">
+                  Join vibrant student communities
+                </p>
+              </div>
+            </div>
+
+            {/* Announcements Card */}
+            <div className="group relative h-[300px] sm:h-[350px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] cursor-pointer">
+              <Image
+                src="/section_images/607650908_1282461717263786_3862138062056957348_n.jpg"
+                alt="Announcements"
+                fill
+                className="object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+              <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
+                <MessageCircle className="w-8 h-8 sm:w-10 sm:h-10 text-[#d82f50] mb-3 sm:mb-4" />
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-2 font-[family-name:var(--font-gladiola)]">
+                  Announcements
+                </h3>
+                <p className="text-sm sm:text-base text-gray-200">
+                  Stay updated with latest news
+                </p>
+              </div>
+            </div>
+
+            {/* Academics Card */}
+            <div className="group relative h-[300px] sm:h-[350px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] cursor-pointer">
+              <Image
+                src="/section_images/608513656_1282462430597048_8542405572521772888_n.jpg"
+                alt="Academics"
+                fill
+                className="object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+              <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
+                <Camera className="w-8 h-8 sm:w-10 sm:h-10 text-[#d82f50] mb-3 sm:mb-4" />
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-2 font-[family-name:var(--font-gladiola)]">
+                  Academics
+                </h3>
+                <p className="text-sm sm:text-base text-gray-200">
+                  Excellence in education and achievement
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Content will go here - Different from version 1 */}
